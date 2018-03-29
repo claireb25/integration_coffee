@@ -49,9 +49,11 @@
     width: 88%;
 }
 
+
+
 /*Mise en valeur produit*/
 .container-produit{
-    height: auto;
+    height: 300px;
     justify-content: center;
 }
 .produit{
@@ -136,5 +138,16 @@ h4{
     
 }
 
+}
+
+@media (min-width:992px){
+.section-vignette{
+    height: 550px;
+}
+
+.container-produit{
+    height: 550px;
+   
+}
 }
 
