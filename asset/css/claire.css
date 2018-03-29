@@ -1,5 +1,3 @@
-
-
 .background-nav{
     background-color: #663333;
 }
@@ -54,8 +52,6 @@
     width: 88%;
 }
 
-
-
 /*Mise en valeur produit*/
 .container-produit{
     height: 380px;
@@ -69,85 +65,27 @@
     margin-bottom : 40px;   
 }
 
-/*Essai 360*/
-
-body{
-    perspective: 800px;
-}
-
-
-.flip {
-    width: 550px;
-    height: 155px;
-    position: absolute;
-    top: 200px;
-    left: 250px;
-    transition: 10s;
-    backface-visibility: hidden; /* Permet d'éviter de voir le bloc de dos */
-}
-
-
-#devant{
-    z-index: 100;
-    background-image: url("../../media/mockupfront.png");
-    background-repeat: no-repeat;
-}
-
-
-#derriere{
-    z-index: 50;
-    background-image: url("../../media/produit.png");
-    background-repeat: no-repeat;
-    transform: rotateY(-180deg); /* Celui-ci est retourné par défaut */
-}
-
-
-#devant:hover{
-    transform: rotateY(360deg); /* On passe de 0 à 360° : tour complet */
-}
-
-
-/*
-
-Astuce :
-
-Lorsqu'on survole le bloc devant, on applique une rotation au bloc derriere
-
-*/
-
-#devant:hover + #derriere
-
-{
-
-    transform: rotateY(180deg);  /* On passe de -180° à 180° : tour complet */
-
-}
-
-
-/* .produit{
-    transition: transform 2s;
-}
- 
-.produit:hover{
-    transform:rotate(360deg);
-}  */
 
 /*footer*/
 footer{
     height: auto;
 }
+
 h4{
     margin: 0;
 }
+
 .droits-footer{
     font-size: 14px;
     display: flex;
     padding: 0px;    
 }
+
 .ny{
     margin-top: 13px;
     padding: 0;
 }
+
 .reseauxsociaux{
     display: flex;
     flex-direction: row; 
@@ -171,11 +109,11 @@ h4{
     width: 30px;
     background-repeat: no-repeat;
 }
-/*Contact*/
 
 
 
-@media (min-width : 768px){
+/* tablette */
+@media (min-width : 768px){ 
 
 .fond-marron-xs{
     background-color: white;
@@ -194,12 +132,12 @@ h4{
     margin-left: auto;
     text-align: center;
 }
-.droits-footer{
-    display: unset;
-    
-}
 
-}
+.droits-footer{
+    display: unset;  
+}}
+
+/*Desktop*/
 
 @media (min-width:992px){
 .section-vignette{
@@ -207,13 +145,69 @@ h4{
 }
 
 .vignette{
-    padding-top: 15px;
+   padding-top:35px; 
+} 
+
+.background-circle{
+    width: 190px;
+    height: 190px;
+    position: relative;
+    margin: 25px auto;
 }
+
+.cup{
+    position: absolute;
+    top : 28px;
+    left: 48px;
+    width: 100px;
+    height: 130px; 
+}
+
+/*produit*/
+
 .container-produit{
     height: 550px;
     margin-top: 20px;
-
-   
 }
+/*Effet 360*/
+
+body {
+    perspective: 800px;
+}
+
+.flip {
+    width: 550px;
+    height: 155px;
+    position: absolute;
+    top: 200px;
+    left: 250px;
+    transition: 10s;
+    backface-visibility: hidden; /* Permet d'éviter de voir le bloc de dos */
+}
+
+#devant{
+    z-index: 100;
+    background-image: url("../../media/mockupfront.png");
+    background-repeat: no-repeat;
+}
+
+#derriere{
+    z-index: 50;
+    background-image: url("../../media/produit2.png");
+    background-repeat: no-repeat;
+    transform: rotateY(-180deg); /* Celui-ci est retourné par défaut */
+}
+
+#devant:hover{
+    transform: rotateY(360deg); /* On passe de 0 à 360° : tour complet */
+}
+
+
+/* on applique une rotation au bloc derriere lorsqu'on survole le bloc devant */
+
+#devant:hover + #derriere{
+    transform: rotateY(180deg);  /* On passe de -180° à 180° : tour complet */
+}
+
 }
 
