@@ -1,0 +1,30 @@
+/*Ensemble des parties avec un fond marron*/
+.fond-marron-xs{
+    background-color: #663333;
+    color: white;
+}
+
+/*Partie des vignettes*/
+
+.background-circle{
+    border-radius: 50%;
+    background-color: #cc3366;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    margin: 25px auto;
+}
+
+.cup{
+    position: absolute;
+    top : 4px;
+    left: 15px;
+}
+
+.description-icone{
+    margin: 0 auto 30px auto;
+    text-align: center;
+    width: 88%;
+}
+
+/*Mise en valeur produit*/
