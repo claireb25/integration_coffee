@@ -7,9 +7,10 @@
 
 .header{
     background-image: url("../../media/background-header.jpg");
-    background-position: 75% 35%;
+    background-position: 78% 21%; 
+    
     width: auto;
-    height: 300px;
+    height: 403px;
 }
 
 .about-us{
