@@ -28,19 +28,24 @@
 
 /*Partie des vignettes*/
 
+.vignette{
+    height: 410px;
+    padding-top: 80px;
+}
+
 .background-circle{
     border-radius: 50%;
     background-color: #cc3366;
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     position: relative;
     margin: 25px auto;
 }
 
 .cup{
     position: absolute;
-    top : 4px;
-    left: 15px;
+    top : 13px;
+    left: 25px;
 }
 
 .description-icone{
@@ -53,8 +58,9 @@
 
 /*Mise en valeur produit*/
 .container-produit{
-    height: 300px;
+    height: 380px;
     justify-content: center;
+    position: relative;
 }
 .produit{
     width: 100%;
@@ -62,6 +68,61 @@
     margin-top: 40px;
     margin-bottom : 40px;   
 }
+
+/*Essai 360*/
+
+body{
+    perspective: 800px;
+}
+
+
+.flip {
+    width: 550px;
+    height: 155px;
+    position: absolute;
+    top: 200px;
+    left: 250px;
+    transition: 10s;
+    backface-visibility: hidden; /* Permet d'éviter de voir le bloc de dos */
+}
+
+
+#devant{
+    z-index: 100;
+    background-image: url("../../media/mockupfront.png");
+    background-repeat: no-repeat;
+}
+
+
+#derriere{
+    z-index: 50;
+    background-image: url("../../media/produit.png");
+    background-repeat: no-repeat;
+    transform: rotateY(-180deg); /* Celui-ci est retourné par défaut */
+}
+
+
+#devant:hover{
+    transform: rotateY(360deg); /* On passe de 0 à 360° : tour complet */
+}
+
+
+/*
+
+Astuce :
+
+Lorsqu'on survole le bloc devant, on applique une rotation au bloc derriere
+
+*/
+
+#devant:hover + #derriere
+
+{
+
+    transform: rotateY(180deg);  /* On passe de -180° à 180° : tour complet */
+
+}
+
 
 /* .produit{
     transition: transform 2s;
@@ -142,11 +203,16 @@ h4{
 
 @media (min-width:992px){
 .section-vignette{
-    height: 550px;
+    height: 400px;
 }
 
+.vignette{
+    padding-top: 15px;
+}
 .container-produit{
     height: 550px;
+    margin-top: 20px;
+
    
 }
 }

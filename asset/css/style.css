@@ -7,10 +7,15 @@
 
 .header{
     background-image: url("../../media/background-header.jpg");
-    background-position: 78% 21%; 
+    background-position: 81% 10%; 
     
     width: auto;
-    height: 403px;
+    height: 500px;
+}
+
+
+.section-contact{
+    height: 400px;
 }
 
 .about-us{
@@ -18,9 +23,12 @@
     background-size: cover;
     background-position: 70% 30%;
     width: auto;
-    height: 625px;
-    
+    height: 480px; 
 }
+.about-us-text{
+    height: 300px;
+}
+
 
 .message{
     margin: 5px 5px 5px 0px;
@@ -49,11 +57,9 @@
 }
 
 @media(min-width: 768px){
-    .message{
-        width: 100%;
-    }
-    
-
+.message{
+    width: 100%;
+}
 
 .about-us-text{
     margin: 29px 30px;
