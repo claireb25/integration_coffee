@@ -6,15 +6,16 @@
 }
 
 .header{
-    background-image: url(/media/background-header.jpg);
-    height: auto;
+    background-image: url("../../media/background-header.jpg");
+    background-position: 75% 35%;
+    width: auto;
+    height: 510px;
 }
 
 .about-us{
-    background-image: url(/media/about-us.jpg);
-    background-position: center;
-    width: 833px;
-    height: 720px;
-    margin: 0px;
-    padding: 0px;
+    background-image: url("../../media/about-us.jpg");
+    background-size: cover;
+    background-position: 70% 30%;
+    width: auto;
+    height: 510px;
 }
