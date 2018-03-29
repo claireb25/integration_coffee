@@ -17,5 +17,16 @@
     background-size: cover;
     background-position: 70% 30%;
     width: auto;
-    height: 510px;
+    height: 400px;
+}
+
+.about-us-text{
+    margin: 40px 30px;
+    text-align: center;
+}
+
+@media(min-width :768px){
+.about-us-text{
+    margin: 29px 30px;
+}
 }
