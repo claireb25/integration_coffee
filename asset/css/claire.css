@@ -1,3 +1,14 @@
+body{
+    position: relative;
+}
+
+.background-nav{
+    background-color: #663333;
+}
+
+.navbar-toggler{
+    border : none;
+}
 /*Les sous-titres*/
 
 .sous-titres{
@@ -43,10 +54,14 @@
 /*Mise en valeur produit*/
 .container-produit{
     height: 200px;
+   
+    justify-content: center;
 }
 .produit{
     width: 100%;
-    margin-top: 25px;
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom : 35px;   
 }
 
 .produit{
@@ -55,54 +70,17 @@
  
 .produit:hover{
     transform:rotate(360deg);
+} 
+
+/*footer*/
+
+
+
+@media (min-width : 768px){
+
+.fond-marron-xs{
+    background-color: white;
+    color: black;
+}
 }
 
-/*360 du produit*
-body{
-    perspective: 800px;
-}
-
-
-.image-produit{
-    width: 200px;
-    height: 150px;
-    position: absolute;
-    top: 200px;
-    left: 500px;
-    opacity: 0.5;
-    border: 2px solid #444;
-    text-align: center;
-    font-size: 1.3em;
-    font-family: arial, sans-serif;
-    transition: 2s;
-    backface-visibility: hidden;  Permet d'éviter de voir le bloc de dos 
-}
-
-
-#devant{
-    z-index: 100;
-    background-image: url('../../media/produit_01.png');
-}
-
-
-#derriere {
-    z-index: 50;
-    background-image: linear-gradient(white, red);
-    transform: rotateY(-180deg); /* Celui-ci est retourné par défaut 
-}
-
-#devant:hover{
-    transform: rotateY(360deg); 
-}
-
-
-
-
-#devant:hover + #derriere
-
-{
-
-    transform: rotateY(180deg);  
-
-}
-*/

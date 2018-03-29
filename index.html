@@ -14,7 +14,7 @@
 <body>
     
     <!-- navigation -->
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <nav class="navbar  fixed-top navbar-expand-md background-nav navbar-dark">
         <a class="navbar-brand" href="#"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
@@ -22,13 +22,16 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
                 <li class="nav-item">
+                    <a class="nav-link" href="#about">A propos</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#">Nos services</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Produits</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -43,7 +46,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md fond-gris">
-                <h2>About us</h2>
+                <h2 id="about" class="sous-titres">Qui sommes-nous?</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
             </div>
             <!--<div class="col-md about-us">
@@ -53,7 +56,7 @@
     </div>
 <!-- Partie Claire -->    
     <!-- icones -->
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md vignette">
                 <div class="background-circle">
@@ -68,7 +71,7 @@
                 <p class="description-icone">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus faucibus luctus maximus. Sed condimentum.</p>
             </div>
             <div class="col-md vignette">
-                <div class="background-circle">
+                <div class=" background-circle">
                     <img class="cup" src="media/coffee.png" alt="tasse de caffé" width="50" height="65">
                 </div>
                 <p class="description-icone">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus faucibus luctus maximus. Sed condimentum.</p>
@@ -82,13 +85,13 @@
             <h2 class="sous-titres">Nos produits</h2>
             <!-- <div class="image-produit" id="devant">Devant</div>
             <div class="image-produit" id="derriere">Derrière !</div> -->
-            <img class="produit" src="media/produit_01.png" alt="Barre de céréale Mock Up" width="554" eight="155">
+            <img class="produit" src="media/produit_01.png" alt="Barre de céréale Mock Up" width="554" height="155">
         </div>
     </div>
     
     <!-- contact -->
     <div class="container-fluid">
-        <form class="container">
+        <form id="contact" class="container">
             <div class="col-md">
                 <input type="text" placeholder="nom">
             </div>
@@ -108,10 +111,11 @@
     <div class="container-fluid fond-marron">
         <div class="container">
             <div>
-                <h4>Nenad et Yannick</h4>
+                <h4> © Nenad et Yannick</h4>
             </div>
             <div>
-                facebook + instagram
+                <div class="facebook"></div>
+                <div class="instagram"></div>
             </div>
         </div>
     </div>

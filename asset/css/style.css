@@ -6,12 +6,15 @@
 }
 
 .header{
-    background-image: url(/media/background-header.jpg);
-    height: auto;
+    background-image: url("../../media/background-header.jpg");
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white; 
 }
 
 .about-us{
-    background-image: url(/media/about-us.jpg);
+    background-image: url("../../media/about-us.jpg");
     background-position: center;
     width: 833px;
     height: 720px;
