@@ -9,7 +9,7 @@
     background-image: url("../../media/background-header.jpg");
     background-position: 75% 35%;
     width: auto;
-    height: 510px;
+    height: 500px;
 }
 
 .about-us{
@@ -17,5 +17,28 @@
     background-size: cover;
     background-position: 70% 30%;
     width: auto;
-    height: 510px;
+    height: 500px;
+}
+
+.message{
+    margin: 5px 5px 5px -15px;
+}
+
+.nom, .prenom{
+    margin: 5px 5px 5px 0px;
+}
+
+.valider{
+    background-color: #663333;
+    border-color: #663333;
+}
+
+.bouton{
+    padding-left: 0px;
+}
+
+@media(min-width: 768px){
+    .message{
+        width: 100%;
+    }
 }
