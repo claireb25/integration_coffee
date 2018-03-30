@@ -8,13 +8,13 @@
     <link rel="stylesheet" type="text/css" href="asset/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="asset/css/style.css">
     <link rel="stylesheet" type="text/css" href="asset/css/claire.css">
-    <title>coffee to drink</title>
+    <title>Coffee to drink</title>
 </head>
 
 <body>
 
     <!-- navigation -->
-    <nav class="navbar  fixed-top navbar-expand-md background-nav navbar-dark">
+    <nav class="navbar fixed-top navbar-expand-md background-nav navbar-dark">
         <a class="navbar-brand" href="#"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
@@ -25,10 +25,10 @@
                     <a class="nav-link" href="#about">A propos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Nos services</a>
+                    <a class="nav-link" href="#services">Nos services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Produits</a>
+                    <a class="nav-link" href="#product">Produits</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact</a>
@@ -49,7 +49,7 @@
                 <div class="col-md">
                     <h2 id="about" class="sous-titres">Qui sommes-nous</h2>
                     <p class="about-us-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Praesent pharetra nibh eget neque lobortis, non lobortis orci fringilla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed leo sapien, venenatis ac ex non, condimentum congue eros. Quisque porttitor pharetra metus non congue.</p>
+                    Praesent pharetra nibh eget neque lobortis, non lobortis orci fringilla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed leo sapien, venenatis ac ex non, condimentum congue eros. Quisque porttitor pharetra metus non congue.</p>
                 </div>
             </div>
             <div class="col-12 col-md about-us">
@@ -58,7 +58,7 @@
     </div>
     <!-- Partie Claire -->
     <!-- icones -->
-    <div class="container-fluid section-vignette">
+    <div class="container-fluid section-vignette" id="services">
         <div class="row">
             <div class="col-md vignette">
                 <div class="background-circle">
@@ -82,24 +82,27 @@
     </div>
 
     <!-- produit -->
-    <div class="container-fluid fond-marron container-produit">
+    <div class="container-fluid fond-marron container-produit" id="product">
         <div class="container">
             <h2 class="sous-titres">Nos produits</h2>
-            <!-- <div class="image-produit" id="devant">Devant</div>
-            <div class="image-produit" id="derriere">Derrière !</div> -->
-            <img class="produit" src="media/produit_01.png" alt="Barre de céréale Mock Up" width="554" height="155">
+            
+                <div class="image-produit flip" id="devant"></div>
+                <div class="image-produit flip" id="derriere"></div>
+            
+            <!-- <img class="produit" src="media/produit_01.png" alt="Barre de céréale Mock Up" width="554" height="155"> -->
         </div>
     </div>
 
     <!-- contact -->
     <div class="container-fluid fond-gris section-contact">
+        <h2 class="sous-titres">Contactez-nous</h2>
         <form id="contact" class="container">
             <div class="row">
                 <div class="col-md nom">
-                    <input class="zone-message" type="text" placeholder="nom">
+                    <input class="zone-message" type="text" placeholder="Nom">
                 </div>
                 <div class="col-md prenom">
-                    <input class="zone-message" type="text" placeholder="prénom">
+                    <input class="zone-message" type="text" placeholder="Prénom">
                 </div>
             </div>
             <div class="row ">
@@ -108,7 +111,7 @@
                 </div>
             </div>
             <div class="col-md bouton">
-                    <input type="submit" style="color:white" class="valider" value="Valider"></button>
+                <input type="submit" class="valider"></button>
             </div>
         </form>
     </div>
