@@ -83,8 +83,8 @@ h4{
 }
 
 .ny{
-    margin-top: 13px;
-    padding: 0;
+    margin-top: 0;
+    padding: 13px 0 0 0;
 }
 
 .reseauxsociaux{
@@ -135,7 +135,8 @@ h4{
 }
 
 .droits-footer{
-    display: unset;  
+    display: unset;
+    margin:0; 
 }}
 
 /*Desktop*/
