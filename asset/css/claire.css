@@ -10,7 +10,7 @@
 .sous-titres{
     text-align: center;
     font-size: 30px;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 /*Ensemble des parties avec un fond marron*/
@@ -59,21 +59,15 @@
     position: relative;
 }
 .produit{
-    width: 550px;
-    height: 155px;
-    margin: 40px auto 40px auto;
-    background-image: url("../../media/produit_01.png");
-    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
 }
 
 
 /*footer*/
 footer{
     height: auto;
-}
-
-h4{
-    margin: 0;
 }
 
 .droits-footer{
@@ -120,7 +114,11 @@ h4{
     background-color: white;
     color: black;
 }
+/*produit*/
 
+.produit{
+    margin-top: 50px;
+}
 /*footer*/
 .reseauxsociaux{
     justify-content: unset;
@@ -158,9 +156,9 @@ h4{
 }
 
 .cup{
-    position: absolute;
-    top : 28px;
-    left: 48px;
+    background-image: url("../../media/coffee2.png");
+    top : 26px;
+    left: 46px;
     width: 100px;
     height: 130px; 
 }
@@ -170,6 +168,10 @@ h4{
 .container-produit{
     height: 550px;
     margin-top: 20px;
+}
+
+.produit{
+    display: none;
 }
 /*Effet 360*/
 
@@ -182,7 +184,7 @@ body {
     height: 155px;
     position: absolute;
     top: 200px;
-    left: 250px;
+    left: 350px;
     transition: 10s;
     backface-visibility: hidden; /* Permet d'éviter de voir le bloc de dos */
 }
