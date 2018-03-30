@@ -9,7 +9,7 @@
     background-image: url("../../media/background-header.jpg");
     background-position: 75% 35%;
     width: auto;
-    height: 500px;
+    height: 300px;
 }
 
 .about-us{
@@ -21,16 +21,20 @@
 }
 
 .message{
-    margin: 5px 5px 5px -15px;
+    margin: 5px 5px 5px 0px;
+ 
 }
 
 .nom, .prenom{
     margin: 5px 5px 5px 0px;
+   
 }
-
+.zone-message{
+    width: 100%;
+}
 .valider{
     background-color: #663333;
-    border-color: #663333;
+    border: none;
 }
 
 .bouton{
@@ -51,5 +55,20 @@
 
 .about-us-text{
     margin: 29px 30px;
+}
+}
+
+@media (min-width:992px){
+
+.header{
+    height: 625px;
+}
+.section-about{
+    height: 625px;
+    width: 100%;
+}
+
+.section-contact{
+    height: 350px;
 }
 }
